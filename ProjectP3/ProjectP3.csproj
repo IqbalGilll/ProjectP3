@@ -213,6 +213,7 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -231,6 +232,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Table.cs" />
     <Compile Include="teams.aspx.cs">
       <DependentUpon>teams.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

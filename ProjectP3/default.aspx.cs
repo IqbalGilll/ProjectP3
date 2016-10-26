@@ -18,20 +18,20 @@ namespace ProjectP3
             if (!IsPostBack)
             {
                 // Get the cricket data
-                this.GetCricket();
+                this.GetTable();
             }
         }
-        private void GetCricket()
+        private void GetTable()
         {
             // connect to EF DB
             using (Model db = new Model())
             {
-                // query the Student Table using EF and LINQ
-                var Cricket = (from allCricket in db.Tables
-                               select allCricket);
+                // query the Cricket Table using EF and LINQ
+                var Table = (from allTable in db.Tables
+                               select allTable);
 
                 // bind the result to the Cricket GridView
-                GridView.DataSource = Cricket.ToList();
+                GridView.DataSource = Table.ToList();
                 GridView.DataBind();
             }
         }
