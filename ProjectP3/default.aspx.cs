@@ -24,7 +24,7 @@ namespace ProjectP3
         private void GetTable()
         {
             // connect to EF DB
-            using (Model db = new Model())
+            using (CricketContent db = new CricketContent())
             {
                 // query the Cricket Table using EF and LINQ
                 var Table = (from allTable in db.Tables

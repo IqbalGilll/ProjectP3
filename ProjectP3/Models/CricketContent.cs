@@ -5,10 +5,10 @@ namespace ProjectP3.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class Model : DbContext
+    public partial class CricketContent : DbContext
     {
-        public Model()
-            : base("name=Model1")
+        public CricketContent()
+            : base("name=CricketContent")
         {
         }
 
